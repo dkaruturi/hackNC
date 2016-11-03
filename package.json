@@ -1,0 +1,27 @@
+{
+  "name": "hacknc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkaruturi/hackNC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkaruturi/hackNC/issues"
+  },
+  "homepage": "https://github.com/dkaruturi/hackNC#readme",
+  "dependencies": {
+    "async": "^2.1.2",
+    "body-parser": "^1.15.2",
+    "fs": "0.0.1-security",
+    "request": "^2.76.0",
+    "watson-developer-cloud": "^2.7.1"
+  }
+}

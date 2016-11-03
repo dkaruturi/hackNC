@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Daniel Stratton - Profile</title>
+    <link rel="stylesheet" href="html/style.css" type="text/css" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="/js/data.js"></script>
+
+</head>
+
+<body ng-app="data" ng-controller="index">
+    <div class="nav"><img src="photos/profile.jpg" />
+        <ul>
+            <li class="selected">About You</li>
+        </ul>
+    </div>
+    <div class="contents">
+        <h1>USER</h1>
+        <div>
+            <table>
+                <tr>
+                    <th>Gender</th>
+                    <td><span ng-bind="gender"></span></td>
+                </tr>
+                <tr>
+                    <th>Age Range</th>
+                    <td><span ng-bind="age_range"></span></td>
+                </tr>
+                <tr>
+                    <th>Best Guess for Age</th>
+                    <td><span ng-bind="age"></span></td>
+                </tr>
+                <tr>
+                    <th>Visual Keywords</th>
+                    <td><span ng-bind="keywords"></span></td>
+                </tr>
+                <tr>
+                    <th>Search Keywords</th>
+                    <td><span ng-bind="search_keywords"></span></td>
+                </tr>
+                <tr>
+                    <th>Personality Traits</th>
+                    <td><span ng-bind="personality_traits"></span></td>
+                </tr>
+                <tr>
+                    <th>Needs</th>
+                    <td><span ng-bind="needs"></span></td>
+                </tr>
+                <tr>
+                    <th>Values</th>
+                    <td><span ng-bind="values"></span></td>
+                </tr>
+                <tr>
+                    <th>Consumer Preferences</th>
+                    <td>
+                        <ul>
+                            <span ng-repeat="pref in consumption_preferences">
+                            <li><span ng-bind="pref"></span></li>
+                            </span>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">Downloaded by USER on Sunday, October 23, 2016 at 9:35am EDT</div>
+</body>
+
+</html>

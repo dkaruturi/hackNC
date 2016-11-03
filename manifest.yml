@@ -1,0 +1,8 @@
+applications:
+- path: .
+  memory: 2560M
+  instances: 1
+  domain: ng.bluemix.net
+  name: aboutmewithoutme
+  host: aboutmewithoutme
+  disk_quota: 1024M
